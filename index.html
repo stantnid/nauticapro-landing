@@ -169,8 +169,8 @@ footer .brand{margin-bottom:4px}footer .brand img{width:28px;height:28px;border-
 @media(max-width:820px){footer{padding:24px 0 12px;text-align:center}.fgrid{grid-template-columns:1fr 1fr;gap:8px 16px}.fgrid .fcol:first-child,.fgrid .fcol:last-child{grid-column:1/-1}footer .brand{justify-content:center}.social{justify-content:center}.fcol:last-child h4{display:none}.fcol:last-child ul{display:flex;justify-content:center;gap:20px}.fbottom{margin-top:6px;padding-top:10px}}
 .hright{display:flex;align-items:center;gap:14px}
 .lang{display:flex;font-size:13px;font-weight:600;border:1px solid #e8e8ed;border-radius:980px;padding:2px}
-.lang a{color:var(--muted);padding:5px 9px;border-radius:980px;min-width:32px;text-align:center}
-.lang a[aria-current]{background:var(--soft);color:var(--ink)}
+.lang a{display:flex;align-items:center;justify-content:center;opacity:.55;color:var(--muted);padding:5px 9px;border-radius:980px;min-width:32px;text-align:center}
+.lang a[aria-current]{opacity:1;background:var(--soft);color:var(--ink)}
 .lang a:hover{color:var(--accent)}
 @media(max-width:420px){.hright{gap:8px}.lang a{padding:5px 7px;min-width:28px}header .btn.sm{padding:8px 13px;font-size:13px}header .brand{font-size:16px;gap:8px}header .brand img{width:34px;height:34px}}
 @media(max-width:820px){
@@ -188,7 +188,7 @@ footer .brand{margin-bottom:4px}footer .brand img{width:28px;height:28px;border-
 <body>
 <header><div class="wrap">
  <a class="brand" href="https://nautica-pro.com"><img src="logo.png" alt="Logo NauticaPro" width="40" height="40">NauticaPro</a>
-<div class="hright"><nav class="lang" aria-label="Lingua"><a href="/" lang="it" hreflang="it" aria-current="page">IT</a><a href="/en/" lang="en" hreflang="en">EN</a></nav>
+<div class="hright"><nav class="lang" aria-label="Lingua"><a href="/" lang="it" hreflang="it" aria-current="page" aria-label="Italiano" title="Italiano"><svg width="22" height="15" viewBox="0 0 3 2" aria-hidden="true" style="display:block;border-radius:3px"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce2b37"/></svg></a><a href="/en/" lang="en" hreflang="en" aria-label="English" title="English"><svg width="22" height="15" viewBox="0 0 60 40" aria-hidden="true" style="display:block;border-radius:3px"><clipPath id="u"><rect width="60" height="40"/></clipPath><g clip-path="url(#u)"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="#fff" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="3"/><path d="M30,0V40M0,20H60" stroke="#fff" stroke-width="12"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></g></svg></a></nav>
  <a class="btn sm" href="https://nautica-pro.com">Prova NauticaPro</a></div>
 </div></header>
 
