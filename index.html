@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>NauticaPro – La tua barca, il mare e il meteo in un'unica app</title>
-<meta name="description" content="Porti e marine sulla mappa, meteo e fasi lunari, diario di bordo, rotte e modalità emergenza: tutto in un'unica app per chi va per mare.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>NauticaPro – App per la barca: porti, meteo e sicurezza</title>
+<meta name="description" content="Porti e marine sulla mappa, meteo con vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.">
+<link rel="canonical" href="https://scopri.nautica-pro.com/">
+<meta name="theme-color" content="#0081FD">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NauticaPro">
-<meta property="og:title" content="NauticaPro – La tua barca, il mare e il meteo in un'unica app">
-<meta property="og:description" content="Porti e marine sulla mappa, meteo e fasi lunari, diario di bordo, rotte e modalità emergenza: tutto in un'unica app per chi va per mare.">
+<meta property="og:title" content="NauticaPro – App per la barca: porti, meteo e sicurezza">
+<meta property="og:description" content="Porti e marine sulla mappa, meteo con vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.">
 <meta property="og:image" content="https://scopri.nautica-pro.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,9 +23,74 @@
 <meta property="og:url" content="https://scopri.nautica-pro.com/">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NauticaPro – La tua barca, il mare e il meteo in un'unica app">
-<meta name="twitter:description" content="Porti e marine sulla mappa, meteo e fasi lunari, diario di bordo, rotte e modalità emergenza: tutto in un'unica app per chi va per mare.">
+<meta name="twitter:title" content="NauticaPro – App per la barca: porti, meteo e sicurezza">
+<meta name="twitter:description" content="Porti e marine sulla mappa, meteo con vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.">
 <meta name="twitter:image" content="https://scopri.nautica-pro.com/og-image.jpg">
+<meta name="twitter:image:alt" content="NauticaPro: porti, meteo e sicurezza della tua barca">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://scopri.nautica-pro.com/#org",
+   "name": "NauticaPro",
+   "url": "https://nautica-pro.com",
+   "logo": "https://scopri.nautica-pro.com/icon-512.png",
+   "email": "info@nautica-pro.com",
+   "sameAs": [
+    "https://www.instagram.com/nauticapro.app",
+    "https://www.tiktok.com/@nauticapro",
+    "https://www.facebook.com/profile.php?id=1410258848831409"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://scopri.nautica-pro.com/#website",
+   "url": "https://scopri.nautica-pro.com/",
+   "name": "NauticaPro",
+   "inLanguage": "it-IT",
+   "publisher": {
+    "@id": "https://scopri.nautica-pro.com/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "NauticaPro",
+   "applicationCategory": "TravelApplication",
+   "operatingSystem": "Web",
+   "url": "https://nautica-pro.com",
+   "inLanguage": "it-IT",
+   "description": "Porti e marine sulla mappa, meteo con vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.",
+   "image": "https://scopri.nautica-pro.com/og-image.jpg",
+   "publisher": {
+    "@id": "https://scopri.nautica-pro.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "La modalità emergenza chiama i soccorsi da sola?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Apre la chiamata alla Guardia Costiera o al 112 e avvisa l'equipaggio, ma la richiesta di soccorso la fai tu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Serve installarla?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. NauticaPro è una web app: la apri dal browser del telefono o del computer su nautica-pro.com. Se vuoi, puoi aggiungerla alla schermata Home del telefono e aprirla come un'app."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 <style>
 :root{--accent:#0081FD;--ink:#1d1d1f;--muted:#6e6e73;--bg:#fff;--soft:#f5f5f7}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -44,7 +111,7 @@ section{padding:100px 0}
 .hero h1{font-size:clamp(38px,6vw,64px);max-width:820px;margin:0 auto 22px}
 .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:640px;margin:0 auto 36px}
 .phone{width:360px;max-width:88vw;border-radius:44px;border:10px solid #1d1d1f;background:#1d1d1f;box-shadow:0 30px 60px rgba(0,40,90,.18);overflow:hidden;margin:0 auto}
-.phone img{display:block;width:100%}
+.phone img{display:block;width:100%;height:auto}
 .hero .phone{margin-top:70px}
 
 .points h2,.center h2{font-size:clamp(30px,4vw,44px);text-align:center;margin-bottom:56px}
@@ -91,7 +158,7 @@ footer .brand{justify-content:center;margin-bottom:8px}
 </head>
 <body>
 <header><div class="wrap">
- <a class="brand" href="https://nautica-pro.com"><img src="logo.png" alt="Logo NauticaPro">NauticaPro</a>
+ <a class="brand" href="https://nautica-pro.com"><img src="logo.png" alt="Logo NauticaPro" width="40" height="40">NauticaPro</a>
  <a class="btn sm" href="https://nautica-pro.com">Prova NauticaPro</a>
 </div></header>
 
@@ -100,7 +167,7 @@ footer .brand{justify-content:center;margin-bottom:8px}
  <h1>Porti, meteo e sicurezza della tua barca, sempre a portata di mano.</h1>
  <p class="lead">NauticaPro riunisce in un'unica app quello che ti serve prima di mollare gli ormeggi e mentre sei in navigazione. Che tu sia alle prime uscite o abbia anni di mare alle spalle.</p>
  <a class="btn" href="https://nautica-pro.com">Prova NauticaPro</a>
- <div class="phone"><img src="home.jpg" alt="Schermata Home di NauticaPro"></div>
+ <div class="phone"><img src="home.jpg" alt="Schermata Home dell'app NauticaPro con i widget" width="660" height="1280" fetchpriority="high"></div>
 </div></section>
 
 <section class="points"><div class="wrap">
@@ -123,7 +190,7 @@ footer .brand{justify-content:center;margin-bottom:8px}
   <p>Esplora porti e marine sulla mappa e trova quello che cerchi.</p>
   <ul><li>Ricerca per nome di marina o porto</li><li>Filtri per affinare i risultati</li><li>La tua posizione sulla mappa</li></ul>
  </div>
- <div class="phone"><img src="mappa.jpg" alt="Mappa dei porti in Sardegna"></div>
+ <div class="phone"><img src="mappa.jpg" alt="Mappa di porti e marine in Sardegna nell'app NauticaPro" width="660" height="1434" loading="lazy" decoding="async"></div>
 </div></section>
 
 <section class="feat rev"><div class="wrap">
@@ -132,7 +199,7 @@ footer .brand{justify-content:center;margin-bottom:8px}
   <p>Le condizioni del giorno e dei giorni successivi, insieme alla luna.</p>
   <ul><li>Vento, raffiche e direzione</li><li>Altezza dell'onda</li><li>Previsioni dei prossimi giorni</li><li>Fasi lunari, orari in cui sorge e tramonta la luna</li></ul>
  </div>
- <div class="phone"><img src="meteo.jpg" alt="Meteo e fasi lunari"></div>
+ <div class="phone"><img src="meteo.jpg" alt="Schermata meteo con vento, onda e fasi lunari in NauticaPro" width="660" height="895" loading="lazy" decoding="async"></div>
 </div></section>
 
 <section class="feat rev"><div class="wrap">
@@ -142,7 +209,7 @@ footer .brand{justify-content:center;margin-bottom:8px}
   <ul><li>Chiamata rapida alla Guardia Costiera (1530) e al 112</li><li>Posizione da copiare o condividere</li><li>Messaggio MAYDAY da leggere sul canale 16</li></ul>
   <p style="font-size:15px;margin-top:14px">NauticaPro apre la chiamata e avvisa l'equipaggio: non invia richieste di soccorso in automatico.</p>
  </div>
- <div class="phone"><img src="sos.jpg" alt="Modalità emergenza"></div>
+ <div class="phone"><img src="sos.jpg" alt="Modalità emergenza di NauticaPro con numeri di soccorso e messaggio MAYDAY" width="660" height="1434" loading="lazy" decoding="async"></div>
 </div></section>
 
 <section class="center"><div class="wrap">
@@ -170,7 +237,7 @@ footer .brand{justify-content:center;margin-bottom:8px}
 </div></section>
 
 <footer><div class="wrap">
- <div class="brand"><img src="logo.png" alt="" style="width:28px;height:28px;border-radius:7px">NauticaPro</div>
+ <div class="brand"><img src="logo.png" alt="" width="28" height="28" loading="lazy" style="width:28px;height:28px;border-radius:7px">NauticaPro</div>
  <a href="https://nautica-pro.com">nautica-pro.com</a>
  <div class="flinks">
   <a href="mailto:info@nautica-pro.com">info@nautica-pro.com</a>
