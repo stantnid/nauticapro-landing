@@ -116,7 +116,6 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 section{padding:100px 0}
 .hero{text-align:center;padding:110px 0 80px}
 .eyebrow{color:var(--accent);font-weight:600;font-size:15px;margin-bottom:16px}
-.pill{display:inline-flex;align-items:center;gap:6px;background:var(--soft);border:1px solid #e8e8ed;color:var(--ink);font-weight:600;font-size:13px;border-radius:980px;padding:6px 14px;margin-bottom:18px}
 .hero h1{font-size:clamp(38px,6vw,64px);max-width:820px;margin:0 auto 22px}
 .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:640px;margin:0 auto 36px}
 .phone{width:360px;max-width:88vw;border-radius:44px;border:10px solid #1d1d1f;background:#1d1d1f;box-shadow:0 30px 60px rgba(0,40,90,.18);overflow:hidden;margin:0 auto}
@@ -149,21 +148,21 @@ details[open] summary:after{content:"–"}
 details p{color:var(--muted);margin-top:12px}
 .final{text-align:center}
 .final h2{font-size:clamp(34px,5vw,54px);margin-bottom:18px}
-footer{border-top:1px solid #e8e8ed;padding:64px 0 28px;color:var(--muted);font-size:14px;background:var(--bg)}
-.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
-.fcol h4{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 14px;letter-spacing:.01em}
+footer{border-top:1px solid #e8e8ed;padding:32px 0 14px;color:var(--muted);font-size:14px;background:var(--bg)}
+.fgrid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:16px 28px;align-items:start}
+.fcol h4{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 2px}
 .fcol ul{list-style:none;padding:0;margin:0}.fcol li{margin:0}
 .fcol li a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted)}
 .fcol a:hover{color:var(--accent)}
-footer .brand{margin-bottom:12px}footer .brand img{width:32px;height:32px;border-radius:8px}
-.ftag{max-width:280px;line-height:1.5;margin:0 0 6px;color:var(--muted)}
+footer .brand{margin-bottom:4px}footer .brand img{width:28px;height:28px;border-radius:7px}
+.ftag{line-height:1.4;margin:0;color:var(--muted)}
 .fsite{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
-.social{display:flex;gap:8px;flex-wrap:wrap}
+.social{display:flex;gap:6px;flex-wrap:wrap}
 .social a{width:44px;height:44px;border-radius:50%;background:var(--soft);color:var(--ink);display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s}
-.social a:hover{background:var(--accent);color:#fff}.social svg{width:20px;height:20px}
-.fbottom{border-top:1px solid #e8e8ed;margin-top:44px;padding-top:22px;font-size:13px;color:var(--muted)}
+.social a:hover{background:var(--accent);color:#fff}.social svg{width:19px;height:19px}
+.fbottom{border-top:1px solid #e8e8ed;margin-top:14px;padding-top:12px;font-size:12px;color:var(--muted)}
 .fbottom .made{font-weight:600}
-@media(max-width:820px){footer{padding:48px 0 24px;text-align:center}.fgrid{grid-template-columns:1fr;gap:28px}footer .brand{justify-content:center}.ftag{margin:0 auto 6px}.social{justify-content:center}.fbottom{margin-top:32px}}
+@media(max-width:820px){footer{padding:24px 0 12px;text-align:center}.fgrid{grid-template-columns:1fr 1fr;gap:8px 16px}.fgrid .fcol:first-child,.fgrid .fcol:last-child{grid-column:1/-1}footer .brand{justify-content:center}.social{justify-content:center}.fcol:last-child h4{display:none}.fcol:last-child ul{display:flex;justify-content:center;gap:20px}.fbottom{margin-top:6px;padding-top:10px}}
 @media(max-width:820px){
  section{padding:48px 0}.hero{padding:44px 0 24px}.hero .phone{margin-top:40px}
  .grid{grid-template-columns:1fr 1fr;gap:12px}.card{padding:18px;border-radius:18px}.card .ic{margin-bottom:10px}.card h3{font-size:16px}.card p{font-size:13.5px}
@@ -183,7 +182,6 @@ footer .brand{margin-bottom:12px}footer .brand img{width:32px;height:32px;border
 </div></header>
 
 <section class="hero"><div class="wrap">
- <span class="pill">Made in Italy 🇮🇹</span>
  <p class="eyebrow">L'app per chi va per mare</p>
  <h1>Porti, meteo e sicurezza della tua barca, sempre a portata di mano.</h1>
  <p class="lead">NauticaPro riunisce in un'unica app quello che ti serve prima di mollare gli ormeggi e mentre sei in navigazione. Che tu sia alle prime uscite o abbia anni di mare alle spalle.</p>
