@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>NauticaPro – App per la barca: porti, meteo e sicurezza</title>
-<meta name="description" content="Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con mappe Windy, vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.">
+<meta name="description" content="Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con layer Windy, vento, onda e fasi lunari, diario di bordo, rotte con batimetria, Home Smart e modalità emergenza: l'app web per chi va in barca.">
 <link rel="canonical" href="https://scopri.nautica-pro.com/">
 <link rel="alternate" hreflang="it" href="https://scopri.nautica-pro.com/">
 <link rel="alternate" hreflang="en" href="https://scopri.nautica-pro.com/en/">
@@ -18,7 +18,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NauticaPro">
 <meta property="og:title" content="NauticaPro – App per la barca: porti, meteo e sicurezza">
-<meta property="og:description" content="Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con mappe Windy, vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.">
+<meta property="og:description" content="Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con layer Windy, vento, onda e fasi lunari, diario di bordo, rotte con batimetria, Home Smart e modalità emergenza: l'app web per chi va in barca.">
 <meta property="og:image" content="https://scopri.nautica-pro.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
 <meta property="og:locale:alternate" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="NauticaPro – App per la barca: porti, meteo e sicurezza">
-<meta name="twitter:description" content="Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con mappe Windy, vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.">
+<meta name="twitter:description" content="Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con layer Windy, vento, onda e fasi lunari, diario di bordo, rotte con batimetria, Home Smart e modalità emergenza: l'app web per chi va in barca.">
 <meta name="twitter:image" content="https://scopri.nautica-pro.com/og-image.jpg">
 <meta name="twitter:image:alt" content="NauticaPro: porti, meteo e sicurezza della tua barca">
 <script type="application/ld+json">
@@ -65,7 +65,7 @@
    "operatingSystem": "Web",
    "url": "https://nautica-pro.com",
    "inLanguage": "it-IT",
-   "description": "Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con mappe Windy, vento, onda e fasi lunari, diario di bordo, rotte e modalità emergenza: l'app web per chi va in barca.",
+   "description": "Porti e marine sulla mappa, traffico navale con MarineTraffic, webcam live, attività nautiche nei pin, contatti delle marine, assistenza tecnica, meteo con layer Windy, vento, onda e fasi lunari, diario di bordo, rotte con batimetria, Home Smart e modalità emergenza: l'app web per chi va in barca.",
    "image": "https://scopri.nautica-pro.com/og-image.jpg",
    "publisher": {
     "@id": "https://scopri.nautica-pro.com/#org"
@@ -205,6 +205,11 @@ html.dark .night .i-moon{display:block}html.dark .night .i-sun{display:none}
 html.dark .phone{border-color:#2c2c2e;background:#2c2c2e;box-shadow:0 30px 60px rgba(0,0,0,.5)}
 html.dark .card .ic{background:rgba(43,149,255,.16)}
 @media(max-width:420px){header .wrap{padding:0 14px}.hbar{padding:0 14px}.hright{gap:6px!important}header .btn.sm{padding:8px 12px!important}}
+
+.shot{display:flex;flex-direction:column;align-items:center;gap:10px}
+.shot-credit{max-width:360px;font-size:12px;line-height:1.45;color:var(--muted);text-align:center;margin:0}
+html.dark .shot-credit{color:var(--muted)}
+
 </style>
 </head>
 <body>
@@ -219,7 +224,8 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
  <h1>Porti, meteo e sicurezza della tua barca, sempre a portata di mano.</h1>
  <p class="lead">NauticaPro riunisce in un'unica app quello che ti serve prima di mollare gli ormeggi e mentre sei in navigazione. Che tu sia alle prime uscite o abbia anni di mare alle spalle.</p>
  <a class="btn" href="https://nautica-pro.com">Prova NauticaPro</a>
- <div class="phone"><img src="home.jpg" alt="Schermata Home dell'app NauticaPro con i widget" width="660" height="1280" fetchpriority="high"></div>
+ <div class="shot"><div class="phone"><img src="home.jpg" alt="Home Smart di NauticaPro con profilo dimostrativo, posizione e anteprima rotta" width="660" height="1055" fetchpriority="high"></div>
+ <p class="shot-credit">Profilo dimostrativo. Mappa: © OpenStreetMap · © OpenSeaMap · batimetria © EMODnet (CC BY 4.0)</p></div>
 </div></section>
 
 <section class="points"><div class="wrap">
@@ -234,8 +240,8 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
   <div class="card"><div class="ic">👥</div><h3>Equipaggio</h3><p>Chi sale a bordo si unisce alla tua barca.</p></div>
   <div class="card"><div class="ic">🆘</div><h3>Modalità emergenza</h3><p>Numeri di soccorso, posizione e messaggio MAYDAY pronti.</p></div>
   <div class="card"><div class="ic">✎</div><h3>Diario di bordo</h3><p>Note ed elenchi giorno per giorno, condivisi con l'equipaggio.</p></div>
-  <div class="card"><div class="ic">➚</div><h3>Rotte</h3><p>Segna le tappe sulla carta e vedi miglia e direzione tra un punto e l'altro.</p></div>
-  <div class="card"><div class="ic">▦</div><h3>Home a widget</h3><p>Le informazioni che contano, in un colpo d'occhio.</p></div>
+  <div class="card"><div class="ic">➚</div><h3>Rotte</h3><p>Segna le tappe sulla carta con batimetria, miglia e direzione tra un punto e l'altro.</p></div>
+  <div class="card"><div class="ic">▦</div><h3>Home Smart</h3><p>Più compatta: posizione, meteo essenziale e anteprima rotta a colpo d'occhio.</p></div>
   <div class="card"><div class="ic">📡</div><h3>Traffico navale e webcam</h3><p>Le navi in zona con MarineTraffic e le webcam live di porti e marine.</p></div>
  </div>
 </div></section>
@@ -299,10 +305,12 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
 <section class="feat"><div class="wrap">
  <div class="txt">
   <h2>Rotta e diario, tappa dopo tappa.</h2>
-  <p>Segna le tappe sulla carta e NauticaPro calcola miglia e direzione.</p>
-  <ul><li>Tappe numerate sulla carta</li><li>Miglia e gradi verso la prossima tappa, con il totale</li><li>Ricerca di porto o località per aggiungere tappe</li><li>Vento previsto ora per ora</li></ul>
+  <p>Segna le tappe sulla carta con batimetria e mappa espansa: NauticaPro calcola miglia e direzione.</p>
+  <ul><li>Tappe numerate sulla carta, con legenda fondale</li><li>Miglia e gradi verso la prossima tappa, con il totale</li><li>Ricerca di porto o località e rotta automatica</li><li>Export GPX della rotta</li><li>Vento previsto ora per ora</li></ul>
+  <p style="font-size:15px;margin-top:14px">La rotta di NauticaPro è solo un'illustrazione indicativa del percorso e non sostituisce la carta nautica.</p>
  </div>
- <div class="phone"><img src="n-rotta.jpg" alt="Rotta con tappe numerate sulla carta nell'app NauticaPro" width="660" height="1322" loading="lazy" decoding="async"></div>
+ <div class="shot"><div class="phone"><img src="n-rotta.jpg" alt="Widget rotta di NauticaPro con batimetria, tappe numerate e rotta automatica" width="660" height="1196" loading="lazy" decoding="async"></div>
+ <p class="shot-credit">© OpenStreetMap · © OpenSeaMap · batimetria © EMODnet (CC BY 4.0)</p></div>
 </div></section>
 
 <section class="feat rev"><div class="wrap">
@@ -316,11 +324,12 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
 
 <section class="feat"><div class="wrap">
  <div class="txt">
-  <h2>Meteo mare: vento e onde con Windy.</h2>
-  <p>La mappa Windy delle onde dentro l'app, con i dati del vento e del mare.</p>
-  <ul><li>Mappa Windy delle onde, con riproduzione nel tempo</li><li>Vento in nodi, direzione e raffiche</li><li>Altezza e periodo dell'onda</li><li>Vento previsto ogni 4 ore</li></ul>
+  <h2>Meteo mare: i layer Windy in una schermata.</h2>
+  <p>Dentro l'app scegli il layer Windy che ti serve: vento, raffiche, onde, correnti e altri dati mare.</p>
+  <ul><li>Layer Windy selezionabili in un'unica schermata</li><li>Vento in nodi, direzione e raffiche</li><li>Onde, mare lungo, correnti e temperatura del mare</li><li>Riproduzione nel tempo sulla mappa</li></ul>
  </div>
- <div class="phone"><img src="n-meteo-windy.jpg" alt="Mappa Windy delle onde con vento e onda nell'app NauticaPro" width="660" height="1322" loading="lazy" decoding="async"></div>
+ <div class="shot"><div class="phone"><img src="n-meteo-windy.jpg" alt="Layer Windy in NauticaPro: vento, raffiche, onde e correnti in una schermata" width="660" height="1193" loading="lazy" decoding="async"></div>
+ <p class="shot-credit">Meteo: Windy.com</p></div>
 </div></section>
 
 <section class="feat rev"><div class="wrap">
