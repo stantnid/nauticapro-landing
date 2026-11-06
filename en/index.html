@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>NauticaPro – The boating app: ports, weather and safety</title>
-<meta name="description" content="Ports and marinas on the map, weather with wind, waves and moon phases, logbook, routes and emergency mode: the web app for boaters.">
+<meta name="description" content="Ports and marinas on the map, weather with Windy layers, wind, waves and moon phases, logbook, routes with bathymetry, Smart Home and emergency mode: the web app for boaters.">
 <link rel="canonical" href="https://scopri.nautica-pro.com/en/">
 <link rel="alternate" hreflang="it" href="https://scopri.nautica-pro.com/">
 <link rel="alternate" hreflang="en" href="https://scopri.nautica-pro.com/en/">
@@ -18,7 +18,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NauticaPro">
 <meta property="og:title" content="NauticaPro – The boating app: ports, weather and safety">
-<meta property="og:description" content="Ports and marinas on the map, weather with wind, waves and moon phases, logbook, routes and emergency mode: the web app for boaters.">
+<meta property="og:description" content="Ports and marinas on the map, weather with Windy layers, wind, waves and moon phases, logbook, routes with bathymetry, Smart Home and emergency mode: the web app for boaters.">
 <meta property="og:image" content="https://scopri.nautica-pro.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
 <meta property="og:locale:alternate" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="NauticaPro – The boating app: ports, weather and safety">
-<meta name="twitter:description" content="Ports and marinas on the map, weather with wind, waves and moon phases, logbook, routes and emergency mode: the web app for boaters.">
+<meta name="twitter:description" content="Ports and marinas on the map, weather with Windy layers, wind, waves and moon phases, logbook, routes with bathymetry, Smart Home and emergency mode: the web app for boaters.">
 <meta name="twitter:image" content="https://scopri.nautica-pro.com/og-image.jpg">
 <meta name="twitter:image:alt" content="NauticaPro: ports, weather and safety for your boat">
 <script type="application/ld+json">
@@ -65,7 +65,7 @@
    "operatingSystem": "Web",
    "url": "https://nautica-pro.com",
    "inLanguage": "en",
-   "description": "Ports and marinas on the map, weather with wind, waves and moon phases, logbook, routes and emergency mode: the web app for boaters.",
+   "description": "Ports and marinas on the map, weather with Windy layers, wind, waves and moon phases, logbook, routes with bathymetry, Smart Home and emergency mode: the web app for boaters.",
    "image": "https://scopri.nautica-pro.com/og-image.jpg",
    "publisher": {
     "@id": "https://scopri.nautica-pro.com/#org"
@@ -205,6 +205,11 @@ html.dark .night .i-moon{display:block}html.dark .night .i-sun{display:none}
 html.dark .phone{border-color:#2c2c2e;background:#2c2c2e;box-shadow:0 30px 60px rgba(0,0,0,.5)}
 html.dark .card .ic{background:rgba(43,149,255,.16)}
 @media(max-width:420px){header .wrap{padding:0 14px}.hbar{padding:0 14px}.hright{gap:6px!important}header .btn.sm{padding:8px 12px!important}}
+
+.shot{display:flex;flex-direction:column;align-items:center;gap:10px}
+.shot-credit{max-width:360px;font-size:12px;line-height:1.45;color:var(--muted);text-align:center;margin:0}
+html.dark .shot-credit{color:var(--muted)}
+
 </style>
 </head>
 <body>
@@ -219,7 +224,8 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
  <h1>Ports, weather and safety for your boat, always at hand.</h1>
  <p class="lead">NauticaPro brings together in one app what you need before you cast off and while you're under way. Whether you're just starting out or have years at sea behind you.</p>
  <a class="btn" href="https://nautica-pro.com">Try NauticaPro</a>
- <div class="phone"><img src="../home.jpg" alt="NauticaPro app Home screen with widgets" width="660" height="1280" fetchpriority="high"></div>
+ <div class="shot"><div class="phone"><img src="../home.jpg" alt="NauticaPro Smart Home with demo profile, position and route preview" width="660" height="1055" fetchpriority="high"></div>
+ <p class="shot-credit">Demo profile. Map: © OpenStreetMap · © OpenSeaMap · bathymetry © EMODnet (CC BY 4.0)</p></div>
 </div></section>
 
 <section class="points"><div class="wrap">
@@ -231,8 +237,8 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
   <div class="card"><div class="ic">👥</div><h3>Crew</h3><p>Whoever comes aboard joins your boat.</p></div>
   <div class="card"><div class="ic">🆘</div><h3>Emergency mode</h3><p>Emergency numbers, position and MAYDAY message ready to go.</p></div>
   <div class="card"><div class="ic">✎</div><h3>Logbook</h3><p>Day-by-day notes and lists, shared with your crew.</p></div>
-  <div class="card"><div class="ic">➚</div><h3>Routes</h3><p>Mark waypoints on the chart and see the miles and heading between each one.</p></div>
-  <div class="card"><div class="ic">▦</div><h3>Widget Home screen</h3><p>The information that matters, at a glance.</p></div>
+  <div class="card"><div class="ic">➚</div><h3>Routes</h3><p>Mark waypoints on the chart with bathymetry, miles and heading between each one.</p></div>
+  <div class="card"><div class="ic">▦</div><h3>Smart Home</h3><p>More compact: position, essential weather and a route preview at a glance.</p></div>
  </div>
 </div></section>
 
@@ -262,6 +268,27 @@ html.dark .card .ic{background:rgba(43,149,255,.16)}
   <p style="font-size:15px;margin-top:14px">NauticaPro starts the call and alerts your crew: it does not send distress requests automatically.</p>
  </div>
  <div class="phone"><img src="../sos.jpg" alt="NauticaPro emergency mode with emergency numbers and MAYDAY message" width="660" height="1434" loading="lazy" decoding="async"></div>
+</div></section>
+
+<section class="feat"><div class="wrap">
+ <div class="txt">
+  <h2>Route and logbook, waypoint by waypoint.</h2>
+  <p>Mark waypoints on the chart with bathymetry and an expanded map: NauticaPro calculates miles and heading.</p>
+  <ul><li>Numbered waypoints on the chart, with a depth legend</li><li>Miles and degrees to the next waypoint, plus the total</li><li>Port or place search and automatic routing</li><li>GPX export of the route</li><li>Hour-by-hour wind forecast</li></ul>
+  <p style="font-size:15px;margin-top:14px">NauticaPro's route is only an indicative illustration of the path and does not replace the nautical chart.</p>
+ </div>
+ <div class="shot"><div class="phone"><img src="../n-rotta.jpg" alt="NauticaPro route widget with bathymetry, numbered waypoints and automatic routing" width="660" height="1196" loading="lazy" decoding="async"></div>
+ <p class="shot-credit">© OpenStreetMap · © OpenSeaMap · bathymetry © EMODnet (CC BY 4.0)</p></div>
+</div></section>
+
+<section class="feat rev"><div class="wrap">
+ <div class="txt">
+  <h2>Sea weather: Windy layers in one screen.</h2>
+  <p>Inside the app, pick the Windy layer you need: wind, gusts, waves, currents and other sea data.</p>
+  <ul><li>Selectable Windy layers in a single screen</li><li>Wind in knots, direction and gusts</li><li>Waves, swell, currents and sea temperature</li><li>Playback over time on the map</li></ul>
+ </div>
+ <div class="shot"><div class="phone"><img src="../n-meteo-windy.jpg" alt="Windy layers in NauticaPro: wind, gusts, waves and currents in one screen" width="660" height="1193" loading="lazy" decoding="async"></div>
+ <p class="shot-credit">Weather: Windy.com</p></div>
 </div></section>
 
 <section class="center"><div class="wrap">
